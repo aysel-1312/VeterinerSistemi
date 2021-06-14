@@ -1,0 +1,12 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/basla.Master" AutoEventWireup="true" CodeBehind="ichastalık.aspx.cs" Inherits="VeterinerSistemi.ichastalık" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <h1> İÇ HASTALIK </h1>
+    <p style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-size: 12px; vertical-align: baseline; background: rgb(255, 255, 255); color: rgb(77, 77, 77); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; İç hastalıkları (Dahiliye), veteriner tıbbın tüm klinik branşlarına temel teşkil eden bir ana bilim dalıdır. Sağlık şikayetiyle gelen hastaların büyük çoğunluğunun problemleri iç hastalıklarının ilgi alanına girmektedir.Dahiliye sindirim sistemi, kalp, akciğer, böbrek, kan hastalıkları, kanserin dahili tanı ve tedavisi, infeksiyon hastalıkları, kas-eklem hastalıkları, hormonal ve allerjik-immunolojik hastalıklar, yaşlı hastaların sağlığı ve hastalıkları ile ilgilenir.</p>
+    <p style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-size: 12px; vertical-align: baseline; background: rgb(255, 255, 255); color: rgb(77, 77, 77); font-family: Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kliniğimizde iç hastalıkları ile ilgili olabilecek şikayetlerin ayrıntılı değerlendirmesi ileri laboratuvar ve modern görüntülü tanı cihazlarının yardımıyla yapılmakta, hastalığın ilişkili olabilaceği organ ve sistemler belirlenmeye çalışılmakta, doğru&nbsp; teşhis konularak hasta için en uygun tedavi şekli belirlenmektedir. Genel dahiliye ünitesinde tanı koyma çalışmaları yapıldığı gibi, tanısı konulmuş kronik dahili hastalıkların takibi de yapılmaktadır</p>
+    <p> 
+            </p>
+</asp:Content>

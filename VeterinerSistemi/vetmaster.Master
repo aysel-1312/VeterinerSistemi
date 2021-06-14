@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="vetmaster.master.cs" Inherits="VeterinerSistemi.vetmaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div>
+              <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>VETERİNERLİK</title>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<style type="text/css" media="all">
+@import "style.css";
+    .auto-style2 {
+        width: 145px;
+    }
+    </style>
+</head>
+<body>
+<div id="maincontainer">
+  <div id="topsection"> <span class="title1">K</span><span class="title2">ÜÇÜK</span><span class="subtitle"> DOST VETERİNERLİK </span> </div>
+  <div id="contentwrapper">
+         <div id="contentcolumn"> 
+      <div class="text">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>      
+                </p>
+                <p>              
+                </p>
+            </asp:ContentPlaceHolder>
+          
+           <div id="copyright"> &copy; Küçük Dostlarımızda Yollara Devam  &copy;<strong> KÜÇÜK DOST VETERİNERLİK </strong></div>
+       
+      </div>
+    </div>
+  </div>
+  <div id="leftcolumn">
+    <div class="text">
+      <ul id="navlist" class="auto-style2">
+
+          <li><a href="hasta.aspx"> HASTALARIM </a> </li>
+          <li><a href="yenikayit.aspx"> YENİ KAYIT EKLE </a> </li>
+          <li><a href ="veterinerduyurulistesi.aspx"> GELEN DUYURULAR </a></li> 
+           <li><a href ="veterinerduyuruliste.aspx"> DUYURU EKLE </a></li> 
+          <li><a href ="veterinermesajlar.aspx" > MESAJ GÖNDER </a></li>
+          <li><a href ="muayene.aspx" > MUAYENE </a></li>
+          <li><a href ="anasayfam.aspx" > ANASAYFA </a></li>
+
+            <div  class="boxleft">
+
+            <div class="boxlefttext"> Hayvanlar hakkında kısa bilgi veya güzel söz yazılmka için ayrıldı...</div> 
+    </div>
+   </div>
+</div>
+</body>
+</html>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,859 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{106045C5-A958-476C-94FC-2C218EF308AB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VeterinerSistemi</RootNamespace>
+    <AssemblyName>VeterinerSistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="anasayfam.aspx" />
+    <Content Include="asıbilgisi.aspx" />
+    <Content Include="biyokimyasal.aspx" />
+    <Content Include="bootstrap-4.0.0-alpha.6-dist\css\bootstrap-grid.css" />
+    <Content Include="bootstrap-4.0.0-alpha.6-dist\css\bootstrap-grid.min.css" />
+    <Content Include="bootstrap-4.0.0-alpha.6-dist\css\bootstrap-reboot.css" />
+    <Content Include="bootstrap-4.0.0-alpha.6-dist\css\bootstrap-reboot.min.css" />
+    <Content Include="bootstrap-4.0.0-alpha.6-dist\css\bootstrap.css" />
+    <Content Include="bootstrap-4.0.0-alpha.6-dist\css\bootstrap.min.css" />
+    <Content Include="bootstrap-4.0.0-alpha.6-dist\js\bootstrap.js" />
+    <Content Include="bootstrap-4.0.0-alpha.6-dist\js\bootstrap.min.js" />
+    <Content Include="deri.aspx" />
+    <Content Include="dijital.aspx" />
+    <Content Include="disunitesi.aspx" />
+    <Content Include="dogum.aspx" />
+    <Content Include="dıskıtahlili.aspx" />
+    <Content Include="ekip.aspx" />
+    <Content Include="fiziktedavi.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="goz.aspx" />
+    <Content Include="guvenlianestezi.aspx" />
+    <Content Include="hakkımızda.aspx" />
+    <Content Include="hasta.aspx" />
+    <Content Include="hematolojik.aspx" />
+    <Content Include="hizdetayguncelle.aspx" />
+    <Content Include="hizekle.aspx" />
+    <Content Include="hizguncelle.aspx" />
+    <Content Include="ichastalık.aspx" />
+    <Content Include="idrartahlili.aspx" />
+    <Content Include="iletisim.aspx" />
+    <Content Include="images\arrow.gif" />
+    <Content Include="images\bg.gif" />
+    <Content Include="images\bg_banner.gif" />
+    <Content Include="images\Book\3064_Sodom_ve_Gomore-Yakup_Kadri_Karaosmanoglu397.jpg" />
+    <Content Include="images\Book\39535_C902j_1509399719.jpg" />
+    <Content Include="images\Book\61431_1464515635.jpg" />
+    <Content Include="images\Book\bbbb.jpg" />
+    <Content Include="images\Book\ses kaydında kaldıgım yer.JPG" />
+    <Content Include="images\ebook.jpg" />
+    <Content Include="images\image.jpg" />
+    <Content Include="images\line.gif" />
+    <Content Include="images\list.gif" />
+    <Content Include="images\resim3.jpg" />
+    <Content Include="images\resim4.jpg" />
+    <Content Include="images\resim5.jpg" />
+    <Content Include="images\resim6.jpg" />
+    <Content Include="images\resim7.jpg" />
+    <Content Include="images\rsm10.jpg" />
+    <Content Include="images\rsm11.jpg" />
+    <Content Include="images\rsm8.jpg" />
+    <Content Include="images\rsm9.jpg" />
+    <Content Include="images\thumbnails\resim3.jpg" />
+    <Content Include="images\thumbnails\resim4.jpg" />
+    <Content Include="images\thumbnails\resim5.jpg" />
+    <Content Include="images\thumbnails\resim6.jpg" />
+    <Content Include="images\thumbnails\resim7.jpg" />
+    <Content Include="images\thumbnails\rsm10.jpg" />
+    <Content Include="images\thumbnails\rsm11.jpg" />
+    <Content Include="images\thumbnails\rsm8.jpg" />
+    <Content Include="images\thumbnails\rsm9.jpg" />
+    <Content Include="images\top.gif" />
+    <Content Include="images\Users\27.JPG" />
+    <Content Include="images\Users\image.jpg" />
+    <Content Include="images\Users\kul hata.JPG" />
+    <Content Include="images\Users\lgc2.JPG" />
+    <Content Include="images\Users\ses kaydında kaldıgım yer.JPG" />
+    <Content Include="js\jquery-1.4.2.min.js" />
+    <Content Include="js\jquery-ui-1.8.1.custom.min.js" />
+    <Content Include="js\main.js" />
+    <Content Include="kangazlari.aspx" />
+    <Content Include="kardiyoloji.aspx" />
+    <Content Include="kedi.aspx" />
+    <Content Include="kopekbilgi.aspx" />
+    <Content Include="kulakburunbogaz.aspx" />
+    <Content Include="kulbilgignclle.aspx" />
+    <Content Include="kullanıcıduyurulistesi.aspx" />
+    <Content Include="kullanıcıGiris.aspx" />
+    <Content Include="kullanıcıgöderilenmesajlar.aspx" />
+    <Content Include="kullanıcımesajlar.aspx" />
+    <Content Include="kullanıcımesajyaz.aspx" />
+    <Content Include="kullanıcıprofil.aspx" />
+    <Content Include="kulpetprofil.aspx" />
+    <Content Include="kus.aspx" />
+    <Content Include="labaratuvar.aspx" />
+    <Content Include="muayene-teshis.aspx" />
+    <Content Include="muayene.aspx" />
+    <Content Include="operasyon.aspx" />
+    <Content Include="ortopedi.aspx" />
+    <Content Include="petekle.aspx" />
+    <Content Include="petguncelle.aspx" />
+    <Content Include="petlerim.aspx" />
+    <Content Include="pratik.aspx" />
+    <Content Include="RESİMLER\delete.png" />
+    <Content Include="RESİMLER\Ekran Görüntüsü %2816%29.png" />
+    <Content Include="RESİMLER\images.jpg" />
+    <Content Include="RESİMLER\indir.jpg" />
+    <Content Include="RESİMLER\mesaj.png" />
+    <Content Include="RESİMLER\mesaj1.jpg" />
+    <Content Include="RESİMLER\muayne2.jpg" />
+    <Content Include="RESİMLER\send.png" />
+    <Content Include="RESİMLER\update.jpg" />
+    <Content Include="sifreunuttum.aspx" />
+    <Content Include="slider.html" />
+    <Content Include="sliderengine\amazingslider.js" />
+    <Content Include="sliderengine\initslider-1.js" />
+    <Content Include="sliderengine\jquery.js" />
+    <Content Include="sliderengine\skins\arrows-32-32-2.png" />
+    <Content Include="sliderengine\skins\bottomshadow-110-95-2.png" />
+    <Content Include="sliderengine\skins\bullet-24-24-5.png" />
+    <Content Include="sliderengine\skins\navarrows-28-28-0.png" />
+    <Content Include="sliderengine\skins\navbuttonbgimage-28-28-0.png" />
+    <Content Include="sliderengine\skins\navplaypause-28-28-0.png" />
+    <Content Include="sliderengine\skins\playvideo-64-64-0.png" />
+    <Content Include="sliderengine\skins\previewarrow-16-8-0.png" />
+    <Content Include="slider_resim\20190126_203304.jpg" />
+    <Content Include="slider_resim\IMG_20190606_131132.jpg" />
+    <Content Include="slider_resim\IMG_20190606_131246.jpg" />
+    <Content Include="slider_resim\resim1.jpg" />
+    <Content Include="slider_resim\resim2.jpg" />
+    <Content Include="slider_resim\resim3.jpg" />
+    <Content Include="slider_resim\resim4.jpg" />
+    <Content Include="slider_resim\resim5.jpg" />
+    <Content Include="slider_resim\resim6.jpg" />
+    <Content Include="slider_resim\resim7.jpg" />
+    <Content Include="slider_resim\slider.css" />
+    <Content Include="spesifik.aspx" />
+    <Content Include="style.css" />
+    <Content Include="ultrason.aspx" />
+    <Content Include="uyeol.aspx" />
+    <Content Include="vetdetayguncelle.aspx" />
+    <Content Include="vetekle.aspx" />
+    <Content Include="veteriner.aspx" />
+    <Content Include="veterinerduyuruguncelle.aspx" />
+    <Content Include="veterinerduyuruliste.aspx" />
+    <Content Include="veterinerduyurulistesi.aspx" />
+    <Content Include="veterinerduyuruyaz.aspx" />
+    <Content Include="veterinergiris.aspx" />
+    <Content Include="veterinergöderilenmesajlar.aspx" />
+    <Content Include="veterinerhastagoruntule.aspx" />
+    <Content Include="veterinermesajlar.aspx" />
+    <Content Include="veterinermesajyaz.aspx" />
+    <Content Include="veterinermuayene.aspx" />
+    <Content Include="veterinerpetprofil.aspx" />
+    <Content Include="vetlistesi.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="yatilitedavi.aspx" />
+    <Content Include="yenikayit.aspx" />
+    <Content Include="yogunbakım.aspx" />
+    <Content Include="yonetici.aspx" />
+    <Content Include="yoneticianasayfa.aspx" />
+    <Content Include="yoneticiduyuruekle.aspx" />
+    <Content Include="yoneticiduyuruguncelle.aspx" />
+    <Content Include="yoneticiduyurulistesi.aspx" />
+    <Content Include="yoneticigöderilenmesajlar.aspx" />
+    <Content Include="yoneticimesajaspx.aspx" />
+    <Content Include="yoneticimesajyaz.aspx" />
+    <Content Include="yoneticiveterinergoruntule.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anasayfam.aspx.cs">
+      <DependentUpon>anasayfam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="anasayfam.aspx.designer.cs">
+      <DependentUpon>anasayfam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asıbilgisi.aspx.cs">
+      <DependentUpon>asıbilgisi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asıbilgisi.aspx.designer.cs">
+      <DependentUpon>asıbilgisi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="basla.Master.cs">
+      <DependentUpon>basla.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="basla.Master.designer.cs">
+      <DependentUpon>basla.Master</DependentUpon>
+    </Compile>
+    <Compile Include="biyokimyasal.aspx.cs">
+      <DependentUpon>biyokimyasal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="biyokimyasal.aspx.designer.cs">
+      <DependentUpon>biyokimyasal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="deri.aspx.cs">
+      <DependentUpon>deri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="deri.aspx.designer.cs">
+      <DependentUpon>deri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dijital.aspx.cs">
+      <DependentUpon>dijital.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dijital.aspx.designer.cs">
+      <DependentUpon>dijital.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="disunitesi.aspx.cs">
+      <DependentUpon>disunitesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="disunitesi.aspx.designer.cs">
+      <DependentUpon>disunitesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dogum.aspx.cs">
+      <DependentUpon>dogum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dogum.aspx.designer.cs">
+      <DependentUpon>dogum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dıskıtahlili.aspx.cs">
+      <DependentUpon>dıskıtahlili.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dıskıtahlili.aspx.designer.cs">
+      <DependentUpon>dıskıtahlili.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ekip.aspx.cs">
+      <DependentUpon>ekip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ekip.aspx.designer.cs">
+      <DependentUpon>ekip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fiziktedavi.aspx.cs">
+      <DependentUpon>fiziktedavi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fiziktedavi.aspx.designer.cs">
+      <DependentUpon>fiziktedavi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="goz.aspx.cs">
+      <DependentUpon>goz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="goz.aspx.designer.cs">
+      <DependentUpon>goz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="guvenlianestezi.aspx.cs">
+      <DependentUpon>guvenlianestezi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="guvenlianestezi.aspx.designer.cs">
+      <DependentUpon>guvenlianestezi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hakkımızda.aspx.cs">
+      <DependentUpon>hakkımızda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hakkımızda.aspx.designer.cs">
+      <DependentUpon>hakkımızda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hasta.aspx.cs">
+      <DependentUpon>hasta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hasta.aspx.designer.cs">
+      <DependentUpon>hasta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hematolojik.aspx.cs">
+      <DependentUpon>hematolojik.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hematolojik.aspx.designer.cs">
+      <DependentUpon>hematolojik.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hizdetayguncelle.aspx.cs">
+      <DependentUpon>hizdetayguncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hizdetayguncelle.aspx.designer.cs">
+      <DependentUpon>hizdetayguncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hizekle.aspx.cs">
+      <DependentUpon>hizekle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hizekle.aspx.designer.cs">
+      <DependentUpon>hizekle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hizguncelle.aspx.cs">
+      <DependentUpon>hizguncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hizguncelle.aspx.designer.cs">
+      <DependentUpon>hizguncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ichastalık.aspx.cs">
+      <DependentUpon>ichastalık.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ichastalık.aspx.designer.cs">
+      <DependentUpon>ichastalık.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="idrartahlili.aspx.cs">
+      <DependentUpon>idrartahlili.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="idrartahlili.aspx.designer.cs">
+      <DependentUpon>idrartahlili.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iletisim.aspx.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iletisim.aspx.designer.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kangazlari.aspx.cs">
+      <DependentUpon>kangazlari.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kangazlari.aspx.designer.cs">
+      <DependentUpon>kangazlari.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kardiyoloji.aspx.cs">
+      <DependentUpon>kardiyoloji.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kardiyoloji.aspx.designer.cs">
+      <DependentUpon>kardiyoloji.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kedi.aspx.cs">
+      <DependentUpon>kedi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kedi.aspx.designer.cs">
+      <DependentUpon>kedi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kopekbilgi.aspx.cs">
+      <DependentUpon>kopekbilgi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kopekbilgi.aspx.designer.cs">
+      <DependentUpon>kopekbilgi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kulakburunbogaz.aspx.cs">
+      <DependentUpon>kulakburunbogaz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kulakburunbogaz.aspx.designer.cs">
+      <DependentUpon>kulakburunbogaz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kulbilgignclle.aspx.cs">
+      <DependentUpon>kulbilgignclle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kulbilgignclle.aspx.designer.cs">
+      <DependentUpon>kulbilgignclle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kullanıcı.Master.cs">
+      <DependentUpon>kullanıcı.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanıcı.Master.designer.cs">
+      <DependentUpon>kullanıcı.Master</DependentUpon>
+    </Compile>
+    <Compile Include="kullanıcıduyurulistesi.aspx.cs">
+      <DependentUpon>kullanıcıduyurulistesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanıcıduyurulistesi.aspx.designer.cs">
+      <DependentUpon>kullanıcıduyurulistesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kullanıcıGiris.aspx.cs">
+      <DependentUpon>kullanıcıGiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanıcıGiris.aspx.designer.cs">
+      <DependentUpon>kullanıcıGiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kullanıcıgöderilenmesajlar.aspx.cs">
+      <DependentUpon>kullanıcıgöderilenmesajlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanıcıgöderilenmesajlar.aspx.designer.cs">
+      <DependentUpon>kullanıcıgöderilenmesajlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kullanıcımesajlar.aspx.cs">
+      <DependentUpon>kullanıcımesajlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanıcımesajlar.aspx.designer.cs">
+      <DependentUpon>kullanıcımesajlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kullanıcımesajyaz.aspx.cs">
+      <DependentUpon>kullanıcımesajyaz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanıcımesajyaz.aspx.designer.cs">
+      <DependentUpon>kullanıcımesajyaz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kullanıcıprofil.aspx.cs">
+      <DependentUpon>kullanıcıprofil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanıcıprofil.aspx.designer.cs">
+      <DependentUpon>kullanıcıprofil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kulpetprofil.aspx.cs">
+      <DependentUpon>kulpetprofil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kulpetprofil.aspx.designer.cs">
+      <DependentUpon>kulpetprofil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kus.aspx.cs">
+      <DependentUpon>kus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kus.aspx.designer.cs">
+      <DependentUpon>kus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="labaratuvar.aspx.cs">
+      <DependentUpon>labaratuvar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="labaratuvar.aspx.designer.cs">
+      <DependentUpon>labaratuvar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="muayene-teshis.aspx.cs">
+      <DependentUpon>muayene-teshis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muayene-teshis.aspx.designer.cs">
+      <DependentUpon>muayene-teshis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="muayene.aspx.cs">
+      <DependentUpon>muayene.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muayene.aspx.designer.cs">
+      <DependentUpon>muayene.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="operasyon.aspx.cs">
+      <DependentUpon>operasyon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="operasyon.aspx.designer.cs">
+      <DependentUpon>operasyon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ortopedi.aspx.cs">
+      <DependentUpon>ortopedi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ortopedi.aspx.designer.cs">
+      <DependentUpon>ortopedi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="petekle.aspx.cs">
+      <DependentUpon>petekle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="petekle.aspx.designer.cs">
+      <DependentUpon>petekle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="petguncelle.aspx.cs">
+      <DependentUpon>petguncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="petguncelle.aspx.designer.cs">
+      <DependentUpon>petguncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="petlerim.aspx.cs">
+      <DependentUpon>petlerim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="petlerim.aspx.designer.cs">
+      <DependentUpon>petlerim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pratik.aspx.cs">
+      <DependentUpon>pratik.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pratik.aspx.designer.cs">
+      <DependentUpon>pratik.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sifreunuttum.aspx.cs">
+      <DependentUpon>sifreunuttum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sifreunuttum.aspx.designer.cs">
+      <DependentUpon>sifreunuttum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="spesifik.aspx.cs">
+      <DependentUpon>spesifik.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="spesifik.aspx.designer.cs">
+      <DependentUpon>spesifik.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sql.cs" />
+    <Compile Include="sqlbaglan.cs" />
+    <Compile Include="ultrason.aspx.cs">
+      <DependentUpon>ultrason.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ultrason.aspx.designer.cs">
+      <DependentUpon>ultrason.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uyeol.aspx.cs">
+      <DependentUpon>uyeol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uyeol.aspx.designer.cs">
+      <DependentUpon>uyeol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vetdetayguncelle.aspx.cs">
+      <DependentUpon>vetdetayguncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vetdetayguncelle.aspx.designer.cs">
+      <DependentUpon>vetdetayguncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vetekle.aspx.cs">
+      <DependentUpon>vetekle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vetekle.aspx.designer.cs">
+      <DependentUpon>vetekle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="veteriner.aspx.cs">
+      <DependentUpon>veteriner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="veteriner.aspx.designer.cs">
+      <DependentUpon>veteriner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="veterinerduyuruguncelle.aspx.cs">
+      <DependentUpon>veterinerduyuruguncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="veterinerduyuruguncelle.aspx.designer.cs">
+      <DependentUpon>veterinerduyuruguncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="veterinerduyuruliste.aspx.cs">
+      <DependentUpon>veterinerduyuruliste.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="veterinerduyuruliste.aspx.designer.cs">
+      <DependentUpon>veterinerduyuruliste.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="veterinerduyurulistesi.aspx.cs">
+      <DependentUpon>veterinerduyurulistesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="veterinerduyurulistesi.aspx.designer.cs">
+      <DependentUpon>veterinerduyurulistesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="veterinerduyuruyaz.aspx.cs">
+      <DependentUpon>veterinerduyuruyaz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="veterinerduyuruyaz.aspx.designer.cs">
+      <DependentUpon>veterinerduyuruyaz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="veterinergiris.aspx.cs">
+      <DependentUpon>veterinergiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="veterinergiris.aspx.designer.cs">
+      <DependentUpon>veterinergiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="veterinergöderilenmesajlar.aspx.cs">
+      <DependentUpon>veterinergöderilenmesajlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="veterinergöderilenmesajlar.aspx.designer.cs">
+      <DependentUpon>veterinergöderilenmesajlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="veterinerhastagoruntule.aspx.cs">
+      <DependentUpon>veterinerhastagoruntule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="veterinerhastagoruntule.aspx.designer.cs">
+      <DependentUpon>veterinerhastagoruntule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="veterinermesajlar.aspx.cs">
+      <DependentUpon>veterinermesajlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="veterinermesajlar.aspx.designer.cs">
+      <DependentUpon>veterinermesajlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="veterinermesajyaz.aspx.cs">
+      <DependentUpon>veterinermesajyaz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="veterinermesajyaz.aspx.designer.cs">
+      <DependentUpon>veterinermesajyaz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="veterinermuayene.aspx.cs">
+      <DependentUpon>veterinermuayene.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="veterinermuayene.aspx.designer.cs">
+      <DependentUpon>veterinermuayene.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="veterinerpetprofil.aspx.cs">
+      <DependentUpon>veterinerpetprofil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="veterinerpetprofil.aspx.designer.cs">
+      <DependentUpon>veterinerpetprofil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vetlistesi.aspx.cs">
+      <DependentUpon>vetlistesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vetlistesi.aspx.designer.cs">
+      <DependentUpon>vetlistesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vetmaster.Master.cs">
+      <DependentUpon>vetmaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vetmaster.Master.designer.cs">
+      <DependentUpon>vetmaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yatilitedavi.aspx.cs">
+      <DependentUpon>yatilitedavi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yatilitedavi.aspx.designer.cs">
+      <DependentUpon>yatilitedavi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yenikayit.aspx.cs">
+      <DependentUpon>yenikayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yenikayit.aspx.designer.cs">
+      <DependentUpon>yenikayit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yogunbakım.aspx.cs">
+      <DependentUpon>yogunbakım.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yogunbakım.aspx.designer.cs">
+      <DependentUpon>yogunbakım.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yonetici.aspx.cs">
+      <DependentUpon>yonetici.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yonetici.aspx.designer.cs">
+      <DependentUpon>yonetici.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yonetici.Master.cs">
+      <DependentUpon>yonetici.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yonetici.Master.designer.cs">
+      <DependentUpon>yonetici.Master</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticianasayfa.aspx.cs">
+      <DependentUpon>yoneticianasayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yoneticianasayfa.aspx.designer.cs">
+      <DependentUpon>yoneticianasayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticiduyuruekle.aspx.cs">
+      <DependentUpon>yoneticiduyuruekle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yoneticiduyuruekle.aspx.designer.cs">
+      <DependentUpon>yoneticiduyuruekle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticiduyuruguncelle.aspx.cs">
+      <DependentUpon>yoneticiduyuruguncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yoneticiduyuruguncelle.aspx.designer.cs">
+      <DependentUpon>yoneticiduyuruguncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticiduyurulistesi.aspx.cs">
+      <DependentUpon>yoneticiduyurulistesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yoneticiduyurulistesi.aspx.designer.cs">
+      <DependentUpon>yoneticiduyurulistesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticigöderilenmesajlar.aspx.cs">
+      <DependentUpon>yoneticigöderilenmesajlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yoneticigöderilenmesajlar.aspx.designer.cs">
+      <DependentUpon>yoneticigöderilenmesajlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticimesajaspx.aspx.cs">
+      <DependentUpon>yoneticimesajaspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yoneticimesajaspx.aspx.designer.cs">
+      <DependentUpon>yoneticimesajaspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticimesajyaz.aspx.cs">
+      <DependentUpon>yoneticimesajyaz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yoneticimesajyaz.aspx.designer.cs">
+      <DependentUpon>yoneticimesajyaz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticiveterinergoruntule.aspx.cs">
+      <DependentUpon>yoneticiveterinergoruntule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yoneticiveterinergoruntule.aspx.designer.cs">
+      <DependentUpon>yoneticiveterinergoruntule.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="basla.Master" />
+    <Content Include="kullanıcı.Master" />
+    <Content Include="bootstrap-4.0.0-alpha.6-dist\css\bootstrap-grid.css.map" />
+    <Content Include="bootstrap-4.0.0-alpha.6-dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="bootstrap-4.0.0-alpha.6-dist\css\bootstrap-reboot.css.map" />
+    <Content Include="bootstrap-4.0.0-alpha.6-dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="bootstrap-4.0.0-alpha.6-dist\css\bootstrap.css.map" />
+    <Content Include="bootstrap-4.0.0-alpha.6-dist\css\bootstrap.min.css.map" />
+    <None Include="packages.config" />
+    <Content Include="vetmaster.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="yonetici.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="images\Resimler\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51860</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51860/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
